@@ -57,17 +57,6 @@ const Blogs: React.SFC<IBlogsProps> = props => {
 
     return (
         <>
-            <div className="container row d-flex">
-                <div className="col-md-6 flex-column-reverse justify-content-end border-right border-dark">
-                    <h3>Add a Blog!</h3>
-                    <form>
-                        <section className="form-group">
-                            <textarea className="form-control" cols={10} rows={10} placeholder="Details" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setContent(event.target.value)} />
-                        </section>
-                        <button className="btn btn-primary" onClick={e => addBlog(e)}>Submit Blog</button>
-                    </form>
-                </div>
-            </div>
             <div>
                 <BlogCard blogs={blogs} />
             </div>
