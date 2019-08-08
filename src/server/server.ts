@@ -10,7 +10,7 @@ import { HashPassword } from './utils/security/passwords';
 
 import './middleware/localstrategy';
 import './middleware/bearerstrategy';
-import router from './routes/api/sessions';
+import router from './routes/api/blogs';
 
 
 const app = express();

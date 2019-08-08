@@ -1,8 +1,8 @@
 import * as express from 'express';
-import sessionsRouter from './api/sessions';
+import sessionsRouter from './api/blogs';
 
 const router = express.Router();
 
-router.use('/sessions', sessionsRouter);
+router.use('/blogs', sessionsRouter);
 
 export default router;

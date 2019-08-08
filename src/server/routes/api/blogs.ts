@@ -9,11 +9,11 @@ router.get('/:id?', async (req, res) => {
     let id = req.params.id;
     try {
         if (id) {
-            let [session] = await knexDB('Sessions').select().where('id', id);
-            res.json(session);
+            let [blog] = await knexDB('blogs').select().where('id', id);
+            res.json(blog);
         } else {
-            let sessions = await knexDB('Sessions').select().orderBy('_created', 'desc');
-        res.json(sessions);
+            let blogs = await knexDB('blogs').select().orderBy('_created', 'desc');
+        res.json(blogs);
         }
     } catch (error) {
         console.log(error);
@@ -21,9 +21,9 @@ router.get('/:id?', async (req, res) => {
     }
 });
 
-router.post('/', isAdmin, async (req, res) => {
+router.post('/', async (req, res) => {
     try {
-        let data = await knexDB('Sessions').insert(req.body);
+        let data = await knexDB('blogs').insert(req.body);
         res.json(data);
     } catch (error) {
         console.log(error);
@@ -32,11 +32,11 @@ router.post('/', isAdmin, async (req, res) => {
 }); 
 
 
-router.put('/:id', isAdmin, async (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
         let id = req.body.id
         let details = req.body.details
-        let editedSesh = await knexDB('Sessions').where('id', '=', id).update('details', details);
+        let editedSesh = await knexDB('blogs').where('id', '=', id).update('details', details);
         res.json(editedSesh);
     } catch (error) {
         console.log(error);
@@ -47,7 +47,7 @@ router.put('/:id', isAdmin, async (req, res) => {
 router.delete('/:id', isAdmin, async (req, res) => {
     try {
         let id = req.body.id
-        let delSesh = await knexDB('Sessions').where('id', '=', id).del();
+        let delSesh = await knexDB('blogs').where('id', '=', id).del();
         res.json(delSesh);
     } catch (error) {
         console.log(error);
