@@ -32,7 +32,7 @@ const Login: React.SFC<ILoginProps> = props => {
     return (
         <>
             <section className="row m-2 card shadow">
-                <p className="ml-4 mt-2">Login to view and add a session!</p>
+                <p className="ml-4 mt-2">Login to plan your trip!</p>
                 <div className="col-md-12 card-body">
                     <div className="input-group">
                         <input className="ml-2" type="email" placeholder="Email" value={email} onChange={(event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)} />
@@ -44,7 +44,7 @@ const Login: React.SFC<ILoginProps> = props => {
                 </div>
             </section>
             <section className="row m-2 card shadow">
-                <p className="ml-4 mt-2">You must request to register for an account. Click the button to go to registration form!</p>
+                <p className="ml-4 mt-2">Not a member? Click to register!</p>
                 <div className="m-2">
                     <Link className="btn btn-primary ml-2" to={`/register`}>Register!</Link>
                 </div>

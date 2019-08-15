@@ -6,11 +6,14 @@ import Calendar from 'react-calendar';
 import { RouteComponentProps } from 'react-router';
 import { User } from '../utils/api';
 
+//Retrieves blog posts and passes to the child component for mapping and displaying to the page.
+
 export interface IBlogsProps extends RouteComponentProps {
     id: number,
     name: string,
     content: string,
-    _created: Date
+    _created: Date,
+    title: string
 }
 
 const Blogs: React.SFC<IBlogsProps> = props => {
@@ -19,6 +22,7 @@ const Blogs: React.SFC<IBlogsProps> = props => {
     const [content, setContent] = useState('');
     const [dateOfEvent, SetDateOfEvent] = useState(new Date());
     const [name, setName] = useState('');
+    const [title, setTitle] = useState('');
 
     const getBlogs = async () => {
         let r = await fetch('/api/blogs');
@@ -32,22 +36,7 @@ const Blogs: React.SFC<IBlogsProps> = props => {
         getBlogs();
     }, []);
 
-    const eventChange = (dateOfEvent: Date) => {
-        SetDateOfEvent(dateOfEvent);
-    }
-
-    const addBlog = async (e: React.MouseEvent) => {
-        e.preventDefault();
-        let newBlog = {
-            content
-        };
-        try {
-            let data = await json('/api/blogs', 'POST', newBlog)
-            getBlogs();
-        } catch (error) {
-            console.log(error);
-        }
-    };
+    
 
     useEffect(() => {
         if (!User || User.userid === null || User.role !== 'admin') {
@@ -57,7 +46,7 @@ const Blogs: React.SFC<IBlogsProps> = props => {
 
     return (
         <>
-            <div>
+            <div className="container">
                 <BlogCard blogs={blogs} />
             </div>
         </>
