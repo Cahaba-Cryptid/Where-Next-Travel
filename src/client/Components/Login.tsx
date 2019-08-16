@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { RouteComponentProps, Link } from 'react-router-dom';
 import { json, SetToken } from '../utils/api'
 
+//Controls login. Icluding retrieving tokens
+
 const Login: React.SFC<ILoginProps> = props => {
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('')

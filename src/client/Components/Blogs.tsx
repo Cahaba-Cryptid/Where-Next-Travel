@@ -28,8 +28,6 @@ const Blogs: React.SFC<IBlogsProps> = props => {
         let r = await fetch('/api/blogs');
         let blogs = await r.json();
         setBlogs(blogs)
-        // let sessions = await json('/api/session', 'GET');
-        // setSessions(sessions);
     }
 
     useEffect(() => {
