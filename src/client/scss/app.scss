@@ -1,8 +1,7 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-
 @import './variables';
-
 @import './utils/navbar';
+@import 'src/client/scss/pages/_home.scss';
 
 body {
     background: gainsboro;
