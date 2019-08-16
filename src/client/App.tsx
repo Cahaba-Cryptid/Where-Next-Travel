@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Login from './Components/Login';
-import UsefulLinks from './Components/UsefulLinks';
+// import UsefulLinks from './Components/UsefulLinks';
 import Blogs from './Components/Blogs';
 import Register from './Components/Register';
 
@@ -21,7 +21,7 @@ const App: React.SFC<AppProps> = () => {
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/login' component={Login} />
-                <Route exact path='/' component={UsefulLinks} />
+                {/* <Route exact path='/' component={UsefulLinks} /> */}
                 <Route exact path='/blogs' component={Blogs} />
                 <Route exact path='/register' component={Register} />
             </Switch>

@@ -20,8 +20,8 @@ const Home: React.SFC<HomeProps> = () => {
                         <div className="carousel-item active">
                             <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" className="d-block w-100 carousel-height" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h5>London</h5>
+                                <p>The mighy Thames river bisects </p>
                             </div>
                         </div>
                         <div className="carousel-item">

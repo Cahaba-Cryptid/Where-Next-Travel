@@ -1,19 +1,60 @@
-// const addSession = async (e: React.MouseEvent) => {
-//     e.preventDefault();
-//     let newSession = {
-//         name,
-//         content,
-//         dateOfEvent
-//     };
-//     try {
-//         let data = await json('/api/sessions/', 'POST', newSession)
-//         getBlogs();
-//     } catch (error) {
-//         console.log(error);
-//     }
-// };
+import * as React from 'react';
+import { json } from '../utils/api';
+import { useState, useEffect } from 'react';
+import Calendar from 'react-calendar';
+import { RouteComponentProps } from 'react-router';
+import { User } from '../utils/api';
 
-{/* <div className="container row d-flex">
+export interface ITravelForm extends RouteComponentProps {
+
+}
+
+const TravelForm: React.SFC<ITravelForm> = props => {
+
+    const [name, setName] = useState('');
+    const [, SetDateOfEvent] = useState(new Date());
+
+const addNewTrip = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    let newForm= {
+        name,
+        email,
+        startDate,
+        //Is the start date flexible
+        dateFlex,
+        //How many nights
+        nights,
+        //Must do locations
+        locations,
+
+        budget,
+        //How many people will be going
+        participants,
+        //Why did you want to do on your trip (i.e. museums, food, drinks, landmarks, etc.)?
+        travelReason,
+        //Favorite travel memory
+        favTravelMem,
+        //What concerns do you have about travelling (i.e. must fly first-class, hates large crowds, etc.)?
+        concerns,
+        //What do you like to do and see?
+        travelInterests,
+        //Preferences for accomodation (AirBnB, hotels, camping)
+        accomodation,
+        //prefered activities
+        prefActivities,
+        allergies,
+        //misc comments
+        comments
+    };
+    try {
+        let data = await json('/api/sessions/', 'POST', newForm)
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+    return (
+<div className="container row d-flex">
                 <div className="col-md-12 flex-column-reverse justify-content-end border-right border-dark">
                     <h3>We're so exited to get you started! Please fill out this trip scoping questionnaire and we will be in touch as soon as we can!</h3>
                     <form>
@@ -41,7 +82,13 @@
                         <section className="form-group">
                             <textarea className="form-control" cols={10} rows={10} placeholder="Details" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setContent(event.target.value)} />
                         </section>
-                        <button className="btn btn-primary" onClick={e => addSession(e)}>Submit Session</button>
+                        <button className="btn btn-primary" onClick={e => addNewTrip(e)}>Submit Session</button>
                     </form>
                 </div>
-            </div> */}
+            </div>
+    );
+
+}
+
+
+export default TravelForm;
