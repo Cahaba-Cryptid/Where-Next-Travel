@@ -12,7 +12,21 @@ export interface ITravelForm extends RouteComponentProps {
 const TravelForm: React.SFC<ITravelForm> = props => {
 
     const [name, setName] = useState('');
-    const [, SetDateOfEvent] = useState(new Date());
+    const [email, setEmail] =useState('');
+    const [dateFlex, setDateFlex] = useState('');
+    const [startDate, setStartDate] = useState(new Date());
+    const [nights, setNights] = useState('');
+    const [locations, setLocations] = useState('');
+    const [budget, setBudget] = useState('');
+    const [participants, setParticipants] = useState('');
+    const [travelReason, setTravelReason] = useState('');
+    const [favTravelMem, setFavTravelMem] = useState('');
+    const [concerns, setConcerns] = useState('');
+    const [travelInterests, setInterests] = useState('');
+    const [accomodation, setAccomodation] = useState('');
+    const [prefActivities, setPrefActivities] = useState('');
+    const [allergies, setAllergies] = useState('');
+    const [comments, setComments] = useState('');
 
 const addNewTrip = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -26,7 +40,6 @@ const addNewTrip = async (e: React.MouseEvent) => {
         nights,
         //Must do locations
         locations,
-
         budget,
         //How many people will be going
         participants,
