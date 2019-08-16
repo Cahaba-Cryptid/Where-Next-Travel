@@ -72,7 +72,7 @@ const TravelForm: React.SFC<ITravelForm> = props => {
 
     return (
         <div className="container row d-flex">
-            <div className="col-md-12 flex-column-reverse justify-content-end border-right border-dark">
+            <div className="col-md-12 card shadow">
                 <h3>We're so exited to get you started! Please fill out this trip scoping questionnaire and we will be in touch as soon as we can!</h3>
                 <form>
                     <section className="form-group">
