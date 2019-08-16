@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Login from './Components/Login';
-// import UsefulLinks from './Components/UsefulLinks';
 import Blogs from './Components/Blogs';
 import Register from './Components/Register';
+import TravelForm from './Components/TravelForm';
+import AboutMe from './Components/AboutMe';
 
 
 export interface AppProps {
@@ -20,8 +21,8 @@ const App: React.SFC<AppProps> = () => {
             <Navbar />
             <Switch>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/login' component={Login} />
-                {/* <Route exact path='/' component={UsefulLinks} /> */}
+                <Route exact path='/aboutme' component={AboutMe} />
+                <Route exact path='/travelform' component={TravelForm} />
                 <Route exact path='/blogs' component={Blogs} />
                 <Route exact path='/register' component={Register} />
             </Switch>
