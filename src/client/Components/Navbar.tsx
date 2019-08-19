@@ -18,7 +18,8 @@ const Navbar: React.SFC<NavbarProps> = () => {
                         <Link className="nav-item nav-link" to='/travelform'>Plan Your Trip</Link>
                         <Link className="nav-item nav-link" to='/blogs'>Blog</Link>
                         <Link className="nav-item nav-link" to='/aboutme'>About Me</Link>
-                        <Link className="nav-item nav-link" to='/instagram'>Instagram</Link>
+                        {/* <Link className="nav-item nav-link" to='https://www.instagram.com/wherenext_travel/'>Instagram</Link> */}
+                        <a className="nav-item nav-link" href="https://www.instagram.com/wherenext_travel/">Instagram</a>
                     </div>
                 </div>
             </nav>

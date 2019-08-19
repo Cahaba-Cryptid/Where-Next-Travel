@@ -83,14 +83,11 @@ const TravelForm: React.SFC<ITravelForm> = props => {
                         <p>Is this date flexible?</p>
                         <div className="input-group">
                             <div className="input-group-prepend">
-                                <div className="input-group-text">
+                                <div className="input-group">
                                     <input type="radio" />
                                 </div>
-                            </div>
-                            <div className="input-group-text">
                                 <input type="radio" aria-label="Radio button for following text input" />
                             </div>
-                            <input type="text" className="form-control" aria-label="Text input with radio button" />
                         </div>
                     </section>
 
@@ -122,24 +119,28 @@ const TravelForm: React.SFC<ITravelForm> = props => {
 
                     <p>What is your budget for the whole trip (airfare, accommodations, food, experiences)?</p>
                     <section className="form-group">
-                        <textarea className="form-control" cols={10} rows={1} placeholder="Name" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
+                        <textarea className="form-control" cols={10} rows={1} placeholder="What is your budget?" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
                     </section>
 
                     <p>Is this a solo trip? If not, who will be traveling with you? (Names and ages, please!)</p>
                     <section className="form-group">
-                        <textarea className="form-control" cols={10} rows={1} placeholder="Name" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
+                        <textarea className="form-control" cols={10} rows={1} placeholder="Who is going?" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
                     </section>
 
                     <p>What the reason for your trip? What experience(s) do you hope to have?</p>
                     <section className="form-group">
-                        <textarea className="form-control" cols={10} rows={1} placeholder="Name" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
+                        <textarea className="form-control" cols={10} rows={1} placeholder="" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
                     </section>
 
                     <p>Tell me about your favorite travel memory.</p>
-
+                    <section className="form-group">
+                        <textarea className="form-control" cols={10} rows={1} placeholder="What is your favorite travel memory?" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
+                    </section>
 
                     <p>What concerns do you have about travel? Or what are your pain points when traveling?</p>
-
+                    <section className="form-group">
+                        <textarea className="form-control" cols={10} rows={1} placeholder="Concerns" onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setName(event.target.value)} />
+                    </section>
 
                     <p>Travel Style/Interests (check all that apply and add your own!)</p>
                     {/* check boxes */}
