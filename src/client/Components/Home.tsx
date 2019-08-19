@@ -8,7 +8,7 @@ const Home: React.SFC<HomeProps> = () => {
 
     return (
         <>
-        {/* Carousel for home page */}
+            {/* Carousel for home page */}
             <div className="carousel-home">
                 <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
@@ -48,6 +48,9 @@ const Home: React.SFC<HomeProps> = () => {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
+            </div>
+            <div className="card shadow">
+                <p className="m-2">We're still building our site, but you can get in touch with us at katiewherenexttravel@gmail.com. Thank you for your interest!</p>
             </div>
         </>
     )

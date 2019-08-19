@@ -30,16 +30,7 @@ const Register: React.SFC<IRegisterProps> = props => {
         <>
             <div className="card row m-3 w-50 shadow">
                 <div className="card-body p-1">
-                    <div className="input-group">
-                        <div className="input-group-prepend">
-                        </div>
-                        <p className="m-2">Welcome to DM Scheduler! In order to keep the integrity of the group I allow to use this site I have implemented registration requests. Insert your full name and email and I'll look all requests over ASAP! Looking forward to our next session!</p>
-                        <input className="m-2" type="text" placeholder="Name" value={name} onChange={(event: React.ChangeEvent<HTMLInputElement>) => setName(event.target.value)} />
-                        <input className="m-2" type="email" placeholder="Email" value={email} onChange={(event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)} />
-                    </div>
-                    <div>
-                        <button className="btn btn-primary mx-2" onClick={() => handleRegister()}>Register</button>
-                    </div>
+                    <p className="m-2">We're still building our site, but you can get in touch with us at katiewherenexttravel@gmail.com. Thank you for your interest!</p>
                 </div>
             </div>
         </>
