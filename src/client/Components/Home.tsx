@@ -9,7 +9,8 @@ const Home: React.SFC<HomeProps> = () => {
     return (
         <>
             {/* Carousel for home page */}
-            <div className="carousel-home">
+            <div className="row">
+            <div className="carousel-home d-flex col-12 justify-content-center">
                 <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
@@ -18,21 +19,21 @@ const Home: React.SFC<HomeProps> = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="public/images/London.jpg" className="d-block w-100 carousel-height" alt="London" />
+                            <img src="/images/London.jpg" className="d-block w-100 carousel-height" alt="London" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>London</h5>
                                 <p>The mighy Thames river bisects </p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="public/images/Berlin.jpg" className="d-block w-100 carousel-height" alt="Berlin" />
+                            <img src="/images/Berlin.jpg" className="d-block w-100 carousel-height" alt="Berlin" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="public/images/Paris2.jpg" className="d-block w-100 carousel-height" alt="Paris" />
+                            <img src="/images/Paris2.jpg" className="d-block w-100 carousel-height" alt="Paris" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -49,6 +50,8 @@ const Home: React.SFC<HomeProps> = () => {
                     </a>
                 </div>
             </div>
+            </div>
+            
             <div className="card shadow my-2 mt-2">
                 <p className="m-2">We're still building our site, but you can get in touch with us at katiewherenexttravel@gmail.com. Thank you for your interest!</p>
             </div>

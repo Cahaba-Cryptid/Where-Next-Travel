@@ -8,11 +8,10 @@ export interface NavbarProps {
 const Navbar: React.SFC<NavbarProps> = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark">
-
-                <nav className="navbar navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-dark row">
+                <nav className="navbar navbar-light">
                     <a className="navbar-brand">
-                        <img src="public/images/WhereNextTravelTempLogo.png" width="30" height="30" className="d-inline-block align-top" alt="" />
+                        <img src="/images/WNTLogo.png" width="30" height="30" className="d-inline-block align-top" alt="Where Next Logo" />
                         Where Next?
                     </a>
                 </nav>
@@ -24,7 +23,7 @@ const Navbar: React.SFC<NavbarProps> = () => {
                     <div className="navbar-nav">
                         {/* Client wants link to Google form while custom form details are solidified. Hiding temporarily. */}
                         {/* <Link className="nav-item nav-link" to='/travelform'>Plan Your Trip</Link> */}
-                        <a className="nav-item nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc0vzqbNPQ0FmBkn0fWJJm-_yv_SHUu-YU98X5BI8PmqTIY-Q/viewform">Plan Your Trip</a>
+                        <a className="nav-item nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc0vzqbNPQ0FmBkn0fWJJm-_yv_SHUu-YU98X5BI8PmqTIY-Q/viewform" target="_blank">Plan Your Trip</a>
                         <Link className="nav-item nav-link" to='/blogs'>Blog</Link>
                         <Link className="nav-item nav-link" to='/aboutme'>About Me</Link>
                         {/* <Link className="nav-item nav-link" to='https://www.instagram.com/wherenext_travel/'>Instagram</Link> */}
