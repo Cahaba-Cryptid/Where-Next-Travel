@@ -49,7 +49,7 @@ const Home: React.SFC<HomeProps> = () => {
                     </a>
                 </div>
             </div>
-            <div className="card shadow">
+            <div className="card shadow my-2 mt-2">
                 <p className="m-2">We're still building our site, but you can get in touch with us at katiewherenexttravel@gmail.com. Thank you for your interest!</p>
             </div>
         </>
