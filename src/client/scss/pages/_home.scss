@@ -1,6 +1,15 @@
-//Limits the size of 
+//Limits the size of the carousel
 .carousel-height {
     height: 400;
     width: 700;
-    max-width: 600;
+    max-width: 700;
 }
+
+.oswald-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.email-link-color {
+    color: $danger;
+}
+

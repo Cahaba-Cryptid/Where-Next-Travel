@@ -52,11 +52,11 @@ const Home: React.SFC<HomeProps> = () => {
             </div>
             </div>
             
-            <div className="card shadow my-2 mt-2">
-                <p className="m-2">We're still building our site, but you can get in touch with us at katiewherenexttravel@gmail.com. Thank you for your interest!</p>
+            <div className="card shadow my-2 mt-2 oswald-font text-theme-color">
+                <p className="m-2">We're still building our site, but you can get in touch with us at <span className="email-link-color">katiewherenexttravel@gmail.com</span>. Thank you for your interest!</p>
             </div>
             <div className="row container d-flex justify-content-center">
-                <div className="col-md-12">
+                <div className="col-md-12 oswald-font text-center text-theme-color">
                 <i>"Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts. Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime." ~ Mark Twain</i>
                 </div>
             </div>
