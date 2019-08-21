@@ -27,7 +27,7 @@ const Navbar: React.SFC<NavbarProps> = () => {
                         <Link className="nav-item nav-link" to='/blogs'>Blog</Link>
                         <Link className="nav-item nav-link" to='/aboutme'>About Me</Link>
                         {/* <Link className="nav-item nav-link" to='https://www.instagram.com/wherenext_travel/'>Instagram</Link> */}
-                        <a className="nav-item nav-link" href="https://www.instagram.com/wherenext_travel/">Instagram</a>
+                        <a className="nav-item nav-link" href="https://www.instagram.com/wherenext_travel/" target="_blank">Instagram</a>
                     </div>
                 </div>
             </nav>
