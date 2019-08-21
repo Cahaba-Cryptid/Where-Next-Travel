@@ -15,7 +15,9 @@ const Navbar: React.SFC<NavbarProps> = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <Link className="nav-item nav-link" to='/travelform'>Plan Your Trip</Link>
+                        {/* Client wants link to Google form while custom form details are solidified. Hiding temporarily. */}
+                        {/* <Link className="nav-item nav-link" to='/travelform'>Plan Your Trip</Link> */}
+                        <a className="nav-item nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc0vzqbNPQ0FmBkn0fWJJm-_yv_SHUu-YU98X5BI8PmqTIY-Q/viewform">Plan Your Trip</a>
                         <Link className="nav-item nav-link" to='/blogs'>Blog</Link>
                         <Link className="nav-item nav-link" to='/aboutme'>About Me</Link>
                         {/* <Link className="nav-item nav-link" to='https://www.instagram.com/wherenext_travel/'>Instagram</Link> */}
