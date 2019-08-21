@@ -18,21 +18,21 @@ const Home: React.SFC<HomeProps> = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" className="d-block w-100 carousel-height" alt="..." />
+                            <img src="public/images/London.jpg" className="d-block w-100 carousel-height" alt="London" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>London</h5>
                                 <p>The mighy Thames river bisects </p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1541004610042-8d31ca3fdf87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" className="d-block w-100 carousel-height" alt="..." />
+                            <img src="public/images/Berlin.jpg" className="d-block w-100 carousel-height" alt="Berlin" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1526821799652-2dc51675628e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1683&q=80" className="d-block w-100 carousel-height" alt="..." />
+                            <img src="public/images/Paris2.jpg" className="d-block w-100 carousel-height" alt="Paris" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

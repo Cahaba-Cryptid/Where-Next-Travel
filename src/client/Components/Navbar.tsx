@@ -9,7 +9,14 @@ const Navbar: React.SFC<NavbarProps> = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark">
-                <Link className="navbar-brand" to='/'>Where Next?</Link>
+
+                <nav className="navbar navbar-light bg-light">
+                    <a className="navbar-brand">
+                        <img src="public/images/WhereNextTravelTempLogo.png" width="30" height="30" className="d-inline-block align-top" alt="" />
+                        Where Next?
+                    </a>
+                </nav>
+                {/* <Link className="navbar-brand" to='/'>Where Next?</Link> */}
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
