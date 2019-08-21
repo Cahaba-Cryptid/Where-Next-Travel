@@ -71,9 +71,9 @@ const TravelForm: React.SFC<ITravelForm> = props => {
     };
 
     return (
-        <div className="container row d-flex">
-            <div className="col-md-12 card shadow">
-                <h3>We're so exited to get you started! Please fill out this trip scoping questionnaire and we will be in touch as soon as we can!</h3>
+        <div className="container row d-flex justify-content-center mx-auto">
+            <div className="col-md-8 d-flex mx-auto card shadow mt-3 rounded">
+                <h3 className="">We're so exited to get you started! Please fill out this trip scoping questionnaire and we will be in touch as soon as we can!</h3>
                 <form>
                     <section className="form-group">
                         Select a Date:
@@ -81,13 +81,15 @@ const TravelForm: React.SFC<ITravelForm> = props => {
                     </section>
                     <section>
                         <p>Is this date flexible?</p>
-                        <div className="input-group">
-                            <div className="input-group-prepend">
-                                <div className="input-group">
-                                    <input type="radio" />
-                                </div>
-                                <input type="radio" aria-label="Radio button for following text input" />
-                            </div>
+                        
+
+                        <div className="custom-control custom-radio">
+                            <input type="radio" className="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" />
+                            <label className="custom-control-label">Default unchecked</label>
+                        </div>
+                        <div className="custom-control custom-radio">
+                            <input type="radio" className="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked />
+                            <label className="custom-control-label"> Default checked</label>
                         </div>
                     </section>
 
