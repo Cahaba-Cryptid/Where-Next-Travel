@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+
 export interface HomeProps {
 
 }
@@ -52,7 +53,7 @@ const Home: React.SFC<HomeProps> = () => {
             </div>
             </div>
             
-            <div className="card shadow my-2 mt-2 oswald-font text-theme-color">
+            <div className="card shadow my-2 mt-2 oswald-font text-theme-color text-center">
                 <p className="m-2">We're still building our site, but you can get in touch with us at <span className="email-link-color">katiewherenexttravel@gmail.com</span>. Thank you for your interest!</p>
             </div>
             <div className="row container d-flex justify-content-center">
@@ -60,6 +61,17 @@ const Home: React.SFC<HomeProps> = () => {
                 <i>"Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts. Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime." ~ Mark Twain</i>
                 </div>
             </div>
+            <div>
+                <hr/>
+            </div>
+            <article className="container p-3">
+                <h3 className="oswald-font text-theme-color">
+                    Why should you travel with us?
+                </h3>
+                <p className="oswald-font text-theme-color">
+                    Since I was in highshool I have wanted nothing more than to travel. I started my schools travel club and started what my mother calls a, "baby-sitting empire" to fund those travels. I never looked back once I boarded that first plane. The memories I have made abroad made me realize that  I want others to feel the way I did on that first take-off. That rush as the plane gathers speed never left me, and I want you to feel that way when you find those adventures for yourself. It is my calling to help you create those adventures. I want you to see new horizons!
+                </p>
+            </article>
         </>
     )
 

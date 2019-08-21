@@ -1,6 +1,7 @@
 import * as React from 'react'
 import './scss/app';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Footer from '../client/Components/Footer';
 
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
@@ -26,6 +27,7 @@ const App: React.SFC<AppProps> = () => {
                 <Route exact path='/blogs' component={Blogs} />
                 <Route exact path='/instagram' component={Instagram} />
             </Switch>
+            <Footer />
         </Router>
     );
 }
