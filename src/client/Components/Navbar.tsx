@@ -10,7 +10,7 @@ const Navbar: React.SFC<NavbarProps> = () => {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark row">
                 <nav className="navbar navbar-light">
-                    <a className="navbar-brand">
+                    <a className="navbar-brand" href="/">
                         <img src="/images/WNTLogo.png" width="30" height="30" className="d-inline-block align-top" alt="Where Next Logo" />
                         Where Next?
                     </a>

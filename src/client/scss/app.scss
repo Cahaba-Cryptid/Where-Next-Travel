@@ -2,9 +2,12 @@
 @import './variables';
 @import './utils/navbar';
 @import 'src/client/scss/pages/_home.scss';
+@import './utils/footer';
 
 body {
     background: gainsboro;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-theme-color {
