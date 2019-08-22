@@ -54,7 +54,7 @@ const Home: React.SFC<HomeProps> = () => {
             </div>
             
             <div className="card shadow my-2 mt-2 oswald-font text-theme-color text-center">
-                <p className="m-2">We're still building our site, but you can get in touch with us at <span className="email-link-color">katiewherenexttravel@gmail.com</span>. Thank you for your interest!</p>
+                <p className="m-2"> My site is still under construction, but you can get in touch with me at <span className="email-link-color">katiewherenexttravel@gmail.com</span>. Thank you for your interest!</p>
             </div>
             <div className="mt-3">
                 <hr/>
@@ -69,7 +69,7 @@ const Home: React.SFC<HomeProps> = () => {
             </div>
             <article className="container p-3">
                 <h3 className="oswald-font text-theme-color">
-                    Why should you travel with us?
+                    Why should you travel with me?
                 </h3>
                 <p className="oswald-font text-theme-color">
                     Since I was in highshool I have wanted nothing more than to travel. I started my schools travel club and started what my mother calls a, "baby-sitting empire" to fund those travels. I never looked back once I boarded that first plane. The memories I have made abroad made me realize that  I want others to feel the way I did on that first take-off. That rush as the plane gathers speed never left me, and I want you to feel that way when you find those adventures for yourself. It is my calling to help you create those adventures. I want you to see new horizons!
