@@ -11,7 +11,7 @@ const Home: React.SFC<HomeProps> = () => {
         <>
             {/* Carousel for home page */}
             <div className="row">
-            <div className="carousel-home d-flex col-12 justify-content-center">
+            {/* <div className="carousel-home d-flex col-12 justify-content-center">
                 <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
@@ -50,11 +50,12 @@ const Home: React.SFC<HomeProps> = () => {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
+            </div> */}
+            
             </div>
             
             <div className="card shadow my-2 mt-2 oswald-font text-theme-color text-center">
-                <p className="m-2"> My site is still under construction, but you can get in touch with me at <span className="email-link-color">katiewherenexttravel@gmail.com</span>. Thank you for your interest!</p>
+                <p className="m-2"> My site is still under construction, but you can get in touch with me at <span className="link-color">katiewherenexttravel@gmail.com</span>. Thank you for your interest!</p>
             </div>
             <div className="mt-3">
                 <hr/>
@@ -74,6 +75,20 @@ const Home: React.SFC<HomeProps> = () => {
                 <p className="oswald-font text-theme-color">
                     Since I was in highshool I have wanted nothing more than to travel. I started my schools travel club and started what my mother calls a, "baby-sitting empire" to fund those travels. I never looked back once I boarded that first plane. The memories I have made abroad made me realize that  I want others to feel the way I did on that first take-off. That rush as the plane gathers speed never left me, and I want you to feel that way when you find those adventures for yourself. It is my calling to help you create those adventures. I want you to see new horizons!
                 </p>
+            </article>
+            <hr/>
+            <article className="row">
+                <div className="container col-md-12 d-flex justify-content-center">
+                <h3 className="oswald-font text-theme-color align-middle">
+                How my process works:
+            </h3>
+            <ul className="list-group list-group-flush">
+                <li className="list-group-item">Fill out the <span><a className="link-color" href="https://docs.google.com/forms/d/e/1FAIpQLSc0vzqbNPQ0FmBkn0fWJJm-_yv_SHUu-YU98X5BI8PmqTIY-Q/viewform" target="_blank">travel form</a></span>.</li>
+                <li className="list-group-item">Let me get to know you more!</li>
+                <li className="list-group-item">I customize your trip package to fit your specifactions.</li>
+                <li className="list-group-item">Take off! You start your travels!</li>
+            </ul>
+                </div>
             </article>
         </>
     )
