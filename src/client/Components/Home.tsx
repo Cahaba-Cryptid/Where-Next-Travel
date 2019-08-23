@@ -14,7 +14,7 @@ const Home: React.SFC<HomeProps> = () => {
           <h1>Hi! I'm Katie.</h1>
           <p>And I love to travel!</p>
           <button className="btn">Let me help you travel!</button>
-      </div>
+        </div>
 
         {/* <div className="carousel-home d-flex col-12 justify-content-center">
                 <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
