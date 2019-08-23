@@ -1,8 +1,10 @@
 import * as express from 'express';
-import sessionsRouter from './api/blogs';
+import blogsRouter from './api/blogs';
+import emailRouter from './api/email';
 
 const router = express.Router();
 
-router.use('/blogs', sessionsRouter);
+router.use('/blogs', blogsRouter);
+router.use('/email-list', emailRouter);
 
 export default router;
