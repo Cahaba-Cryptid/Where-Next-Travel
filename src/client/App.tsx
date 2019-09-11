@@ -27,7 +27,7 @@ const App: React.SFC<AppProps> = () => {
                 <Route exact path='/blogs' component={Blogs} />
                 <Route exact path='/instagram' component={Instagram} />
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     );
 }
